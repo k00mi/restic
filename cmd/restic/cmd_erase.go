@@ -32,8 +32,7 @@ type EraseOptions struct {
 var eraseOptions EraseOptions
 
 func runErase(opts EraseOptions, gopts GlobalOptions, args []string) error {
-	fmt.Print("Hello", args)
-
+	fmt.Printf("Hello %v %s", args, opts.Snapshot)
 	return nil
 }
 
